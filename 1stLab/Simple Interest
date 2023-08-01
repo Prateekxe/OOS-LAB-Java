@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);  
+    
+    // Finding simple interest
+    System.out.print("Enter the Principle: ");
+    int P = sc.nextInt();
+    System.out.print("Enter the Interest Rate: ");
+    int R = sc.nextInt();
+    System.out.print("Enter the Time in Years: ");
+    int T = sc.nextInt();
+    int SimpleInterest = (P*R*T)/100 ;
+    System.out.println("The simple interest earned is " + SimpleInterest);
+    
+  }
+}
