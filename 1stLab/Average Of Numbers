@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);  
+    
+    // Finding the average of three numbers
+    System.out.print("Enter the First Number: ");
+    float first = sc.nextFloat();
+    System.out.print("Enter the Second Number: ");
+    float second = sc.nextFloat();
+    System.out.print("Enter the Third Number: ");
+    float third = sc.nextFloat();
+    float Average = (first + second + third)/3 ;
+    System.out.println("Average of above numbers is " + Average);
+    
+  }
+}
