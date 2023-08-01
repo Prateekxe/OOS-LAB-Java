@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);  // this line is to take input
+    
+    // Finding the area of rectangle
+    System.out.print("Enter the length: ");
+    int len = sc.nextInt();
+    System.out.print("Enter the breadth: ");
+    int bre = sc.nextInt();
+    
+    int RectArea = len * bre ;
+    System.out.println("Area of Rectangle is " + RectArea);
+    
+    // Finding the area of square
+    System.out.print("Enter the side of square: ");
+    int side = sc.nextInt();
+    int SqArea = side * side ;
+    System.out.print("The area of square is " + SqArea);
+  }
+}
