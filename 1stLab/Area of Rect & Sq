@@ -10,14 +10,25 @@ public class Main{
     int len = sc.nextInt();
     System.out.print("Enter the breadth: ");
     int bre = sc.nextInt();
-    
     int RectArea = len * bre ;
     System.out.println("Area of Rectangle is " + RectArea);
+    
+    // Finding perimeter of Rectangle
+    int PerRect = 2*len + 2*bre ;
+    System.out.println("Perimeter of Rectangle is " + PerRect);
+    System.out.println();
     
     // Finding the area of square
     System.out.print("Enter the side of square: ");
     int side = sc.nextInt();
     int SqArea = side * side ;
-    System.out.print("The area of square is " + SqArea);
+    System.out.println("The area of square is " + SqArea);
+    System.out.println();
+    
+    //Finding perimeter or Circumference of circle
+    System.out.print("Enter the radius of circle: ");
+    int rad = sc.nextInt();
+    System.out.println("Perimeter of circle is " + (2*3.14*rad));
+    
   }
 }
