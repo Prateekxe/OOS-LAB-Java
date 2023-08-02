@@ -1,0 +1,51 @@
+// Program to make a calculator using switch case taking user input
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter two numbers a & b for your computation: ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		
+	while(1>0)
+	{
+		
+		System.out.println("\n1. Addition");
+		System.out.println("2. Subtraction");
+		System.out.println("3. Multiplication");
+		System.out.println("4. Division");
+		System.out.println("5. Exit");
+		System.out.print("Enter your choice : ");
+		int option = sc.nextInt();
+		double result = 0;
+		
+		    switch(option){
+		        case 1 : result = a + b;
+		        System.out.println("The result is : "+result);
+		        break;
+		        
+		        case 2 : result = a - b;
+		        System.out.println("The result is : "+result);
+		        break;
+		        
+		        case 3 : result = a * b;
+		        System.out.println("The result is : "+result);
+		        break;
+		        
+		        case 4 : result = a/b;
+		        System.out.println("The result is : "+result);
+		        break;
+		        
+		        case 5 : System.exit(0);
+		        
+		        default : System.out.print("Wrong Choice entered.");
+		        break;
+		
+		      }
+	       }
+		  }
+  }
