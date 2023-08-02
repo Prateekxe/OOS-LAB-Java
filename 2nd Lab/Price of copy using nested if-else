@@ -1,0 +1,31 @@
+// Program - Printing application program where we will take the no. of copy as input 
+// from the user & then print the total price for the printing copy. Use Nested If - if, else if...
+
+import java.io.*;
+import java.util.*;
+
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the no. of copies: ");
+        int copy = sc.nextInt();
+        
+        if(copy>=0 && copy<=99){
+            System.out.print("The price is : "+(copy*0.30));
+        }
+        else if(copy>=100 && copy<=499){
+            System.out.print("The price is : "+(copy*0.28));
+        }
+        else if(copy>=500 && copy<=799){
+            System.out.print("The print is: "+(copy*0.27));
+        }
+        else if(copy>=800 && copy<=1000){
+            System.out.print("The price is : "+(copy*0.26));
+        }
+        else 
+        {
+            System.out.print("The price is :"+(copy*0.25));
+        }
+        
+    }
+}
