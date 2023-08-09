@@ -1,0 +1,35 @@
+// Find the number of prime numbers between a given range
+
+import java.util.*;
+
+class Main{
+    
+    int checkprime(int n){
+        int count = 0;
+        for(int i=1; i<=n/2; i++){
+            if(n%i == 0)
+            count ++;
+        }
+        return count;
+    }
+    
+public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    Main obj = new Main();
+
+System.out.print("Enter the lower limit: ");
+int x = sc.nextInt();
+System.out.print("Enter the upper limit: ");
+int y = sc.nextInt();
+
+System.out.print("The prime numbers in the list are: ");
+for(int i=x; i<=y; i++)
+    {
+    int z = obj.checkprime(i);
+
+    if(z==1){
+    System.out.print(i+ ",");
+            }
+        }
+    }
+}
